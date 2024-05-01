@@ -148,7 +148,7 @@ console.log(str2,"\n",newStr);      //strings are immutable in JS, means the ori
 
 let nwstr = newStr.toLocaleLowerCase();
 console.log(nwstr);
-
+clearInterval
 //--trim method--
 
 let strr = "    this is a long string      ";
