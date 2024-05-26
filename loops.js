@@ -152,7 +152,6 @@ let nwstr = newStr.toLocaleLowerCase();
 console.log(nwstr);
 clearInterval
 //--trim method--
-
 let strr1 = "    this is a long string      ";
 
 let newStrr = strr1.trim();
