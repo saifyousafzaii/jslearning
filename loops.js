@@ -1,13 +1,13 @@
 //--------------------for loop------------------------
 
-//---for loop for printing "saif yousafzai" 100,000 times.-----
+//---for loop for printing "saif yousafzai" 100 times.-----
 
 /*
- for (let i=1; i<=100000; i++) {
+ for (let i=1; i<=100; i++) {
      console.log("saif yousafzai");
  }
 
- console.log("the loop has ended on 100,000 times");
+ console.log("the loop has ended on 100 times");
 */
 
 //_________________________________________________________________________
@@ -57,15 +57,15 @@ do{
 
 
 //--------------------for-of loop-------------------------------
-/* its used to appply loop on string arrays*/
+/* its used to apply loop on string arrays*/
 
 //---Printing each character of a string in separate line using a loop and count the number of characters in the string---
 
 /*
-let str="saif yousafzai";
+let str = "saif yousafzai";
 let length = 0;
 
-for(let val of str){
+for(let val of str){                        // val variable here is use to store each value present on each index of the string and it will keep printing till the last index value of the string
     console.log("val =", val);
     length++;
 }
@@ -85,6 +85,8 @@ let stud = {
     isPass : false,
 
 };
+
+console.log(`object stud`)
 
 for (let k in stud) {
     console.log(k,":", stud[k]);
@@ -119,11 +121,11 @@ alert("Congrats");
 //--------------------------string----------------------------------------------
 //types of strings.
 
-let str = "string with double qoutes, string0";              //3 ways to create a string
+let strr = "string with double qoutes, string0";              //3 ways to create a string
 let str1 = 'string with single qoutes, string1';
 let str2 =`string with backticks, string 2`;
 
-console.log(str, "\n", str1, "\n", str2);           //(escape characters) \n = shift to new line || \t space equivalent of a "tab"
+console.log(strr, "\n", str1, "\n", str2);           //(escape characters) \n = shift to new line || \t space equivalent of a "tab"
 //alert(str.length);                                  //calculates the number of chars in a string
 //alert(str[4]);                                      //gives the index location of a charecter.
 
@@ -151,37 +153,37 @@ console.log(nwstr);
 clearInterval
 //--trim method--
 
-let strr = "    this is a long string      ";
+let strr1 = "    this is a long string      ";
 
-let newStrr = strr.trim();
-console.log(strr, "\n", newStrr);
+let newStrr = strr1.trim();
+console.log(strr1, "\n", newStrr);
 
 //--slice method--
 
-newStrr = strr.slice(3,17);             // the second index is non-inclusive and the second index parameter is optional, if you dont include the second index, you get the remaining string after the first index.
+newStrr = strr1.slice(3,17);             // the second index is non-inclusive and the second index parameter is optional, if you dont include the second index, you get the remaining string after the first index.
 console.log(newStrr);
 
 //--concatination--
 //combining the two strings.
 
-let concat = str.concat(str2);
+let concat = strr1.concat(str2);
 console.log("\n", concat)
 //you can also do this with the following method.
 
-concatt = str + str1;
+concatt = strr1 + str1;
 console.log(concatt, "\nprinted with string concatination")
 
 //--replace a certain part of string with another--
 // called str.replace.  {(consol.log(str.replace("existing val", "value to be replaced with"))}
 
-console.log(str.replace("string with double qoutes", "hello"));
+console.log(strr1.replace("string with double qoutes", "hello"));
 
-console.log(str);
+console.log(strr1);
 
 //--find a character at a certain index and return it--
 //<string name>.charAt(index value);
 
-console.log(str.charAt(5));         //this will output g;
+console.log(strr1.charAt(5));         //this will output g;
 
 /* practice question */
 //get a full name from the user and generate a username for them

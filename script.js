@@ -50,7 +50,7 @@ console.log(`${one}${two}${three}`);
     let test2 = "random-text-for-testing-js"   
     document.getElementById("rand").innerHTML = test2.at(3)
 
-//string slice method to extract some part of the string but the first position in parameter is not counted;
+//string slice method to extract some part of the string using index locations but the first position in parameter is not counted;
 
     let test3 = "this is random text";
     document.getElementById("tesst").innerHTML = test3.slice(8,14);
@@ -59,10 +59,10 @@ console.log(`${one}${two}${three}`);
 
     let test4 = "this is random text";
     document.getElementById("test0").innerHTML = test4.substring(7,14);
-//but if you dont give it the second paramete, it will output the string onwards from the given position;
+//but if you dont give it the second parameter, it will output the string onwards from the given position;
 
     let test5 = "this is a substring text randomly written";
-    document.getElementById("test01").innerHTML = test5.substring(10);
+    document.getElementById("test01").innerHTML = test5.substring(10);          //extracting the slice of a string after the character at index 10;
 
 //converting string to uppercase;
 
@@ -120,7 +120,7 @@ console.log(str4,"this is the console message for combined strings")
 }
 
 {
-    let a = "this is one other thing that is  "
+    let a = "this is one other thing that is stored in variable a but in another block "
 }
 
 // data types
@@ -256,7 +256,7 @@ if (age < 18){
 
 //dark mode if statement.
 
-let mode = "Blue";
+let mode = "light";
 let color;
 
 if (mode=== "dark"){
@@ -363,3 +363,9 @@ if (score >= 80 && score <= 100){
 }
 
 console.log("according to your score, your grade was ", result);
+
+
+//create an arrow function named sample which take and input called "a" and returns it as a**5
+let sample = (a) => a**5;
+let input = prompt("enter a number which you need raised to the power of 5");
+console.log(sample(input));
